@@ -20,22 +20,6 @@ namespace ShortURL.Controllers
             return Ok(await _service.GetAllShortedUrls());
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult> Get()
-        //{
-        //    var urlData = Request.Path.ToUriComponent().Trim('/');
-        //    var sUrl = await _service.GetShortUrl(urlData);
-        //    if (sUrl == null)
-        //    {
-        //        return BadRequest("Invalid Request");
-        //    }
-
-        //    var result = $"{Request.Scheme}://{Request.Host}/{sUrl}";
-        //    return  Redirect(result);
-        //}
-
-  
-
 
         /// <summary>
         /// Saving the Main Url and Shorted Url

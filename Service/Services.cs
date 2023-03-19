@@ -39,44 +39,5 @@ namespace Service
         { 
           return await _repo.GetAllShortedUrls();
         }
-        //private class UrlShortener
-        //{
-        //    private static String ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        //    private static int BASE = 62;
-
-
-
-
-
-        //    public static String encode(int num)
-        //    {
-        //        StringBuilder sb = new StringBuilder();
-
-        //        while (num > 0)
-        //        {
-        //            sb.Append(ALPHABET[(num % BASE)]);
-        //            num /= BASE;
-        //        }
-
-        //        StringBuilder builder = new StringBuilder();
-        //        for (int i = sb.Length - 1; i >= 0; i--)
-        //        {
-        //            builder.Append(sb[i]);
-        //        }
-        //        return builder.ToString();
-        //    }
-
-        //    public static int decode(String str)
-        //    {
-        //        int num = 0;
-
-        //        for (int i = 0, len = str.Length; i < len; i++)
-        //        {
-        //            num = num * BASE + ALPHABET.IndexOf(str[(i)]);
-        //        }
-
-        //        return num;
-        //    }
-        //}
     }
 }
